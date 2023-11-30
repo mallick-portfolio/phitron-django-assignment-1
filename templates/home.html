@@ -1,0 +1,21 @@
+{% extends "base.html" %} 
+{% block title %}Home page{% endblock title %}
+
+{% load static %} {% block content %}
+<div class="container py-5">
+  <div class="row">
+    <div class="col-md-6">
+      <h1>Tiku Resturant</h1>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis,
+      libero. Quibusdam quas a harum magni molestias aut alias error, fugiat id
+      explicabo fuga vitae provident maxime doloribus itaque rem natus? Lorem
+      ipsum dolor, sit amet consectetur adipisicing elit. Harum odit iste at,
+      mollitia dicta tenetur porro ab cupiditate sint beatae, facere rerum
+      quisquam similique. Harum nesciunt dolorem totam suscipit repudiandae.
+    </div>
+    <div class="col-md-6">
+      <img class="w-75" src="{% static "hom.jpg" %}" alt="">
+    </div>
+  </div>
+</div>
+{% endblock content %}

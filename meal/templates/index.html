@@ -1,0 +1,27 @@
+{% extends "base.html" %} 
+{% load static %}
+{% block title %}Meal Page{% endblock title %}
+ {%block content %}
+
+<div class="container">
+  <div class="row">
+    {% for item in categories %}
+
+    <div class="col-md-4 my-2">
+      <div class="card" style="">
+        <img src="{{item.strCategoryThumb}}" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 class="card-title">{{item.idCategory}}</h5>
+          <h5 class="card-title">{{item.strCategory}}</h5>
+          <p class="card-text">
+            {{item.strCategoryDescription |truncatewords:10}}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock content %}
