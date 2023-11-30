@@ -1,5 +1,5 @@
 from django.urls import path
-
+from .views import about
 urlpatterns = [
-    # path('admin/', admin.site.urls),
+    path('', about, name="about-us"),
 ]
